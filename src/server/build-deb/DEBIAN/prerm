@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+if systemctl is-active --quiet myRPC-server.service; then
+    systemctl stop myRPC-server.service
+fi
+systemctl disable myRPC-server.service
+systemctl daemon-reload
+exit 0

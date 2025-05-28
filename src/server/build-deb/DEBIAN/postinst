@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+systemctl daemon-reload
+systemctl enable myRPC-server.service
+systemctl restart myRPC-server.service || systemctl start myRPC-server.service
+exit 0
