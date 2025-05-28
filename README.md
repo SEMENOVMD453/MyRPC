@@ -15,8 +15,8 @@
 ### Библиотека mysyslog
 
 Отвечает за логирование событий и операций:
-- Успешные действия — в `/tmp/myRPC_XXXXXX.stdout`
-- Ошибки — в `/tmp/myRPC_XXXXXX.stderr`
+- в /var/log/myrpc.log
+- в формате [2025-05-28 09:45:26] [INFO] Получено от UDP-клиента: { "login": "user", "command": "echo Hello World!" }
 
 ---
 
